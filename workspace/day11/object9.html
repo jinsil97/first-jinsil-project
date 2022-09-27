@@ -1,0 +1,26 @@
+<script>
+
+// 화살표 함수 (function 예약어를 안쓰고 표현, ES6 부터 추가)
+// 선언문을 사용할 수 없고, 반드시 표현식으로 작성해야 함
+
+const hi = () => alert("안녕하세요");        // 한줄
+hi();
+
+
+const hi1 = () => {
+            alert("안녕하세요 - 중괄호");
+            alert("중괄호");                   // 여러줄은 중괄호로 묶기
+            };
+hi1();
+
+
+let sum =(a,b) => a+b;
+document.write(sum(10,20));
+
+
+let hi2 = user => document.write(user + "님 안녕하세요");
+hi2("히히");
+
+
+
+</script>

@@ -1,0 +1,48 @@
+#container{
+  width: 1000px;
+  margin: 20px auto;   
+}
+h1{
+  text-align: center;
+  color: darkblue;
+}
+.list{
+  list-style: none;
+  padding: 0;
+}
+.list li{
+  float: left;
+  padding :0;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  color: antiquewhite;
+  text-align: center;
+}
+.list img{
+  float: left;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+.list .caption{
+  position: absolute;
+  top: 200px;
+  width: 300px;
+  height: 200px;
+  padding-top: 20px;
+  background-color: rgba(63, 60, 60, 0.6);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: 10;
+
+}
+.list li:hover .caption{
+  opacity: 2;
+  transform: translateY(-200px);
+}
+ 
+.list .caption h2, .list.caption p{
+  color: #fff;
+  text-align: center;
+}

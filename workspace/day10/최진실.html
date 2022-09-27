@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+  <style>
+    table, td {
+      border:1px solid #ccc;
+      border-collapse: collapse;
+    }
+    td {
+      padding:5px;
+      font-size:0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>자리 배치도</h1>
+  <script>
+  var i , j ;
+  var memberNum = prompt("입장객수는 몇명인가요?");
+  var colNum = prompt("한 줄에 몇명씩 앉을건가요?");
+  var rowNum;
+
+  if(memberNum % colNum == 0){
+    rowNum = parseInt(memberNum / colNum);
+  }  else  rowNum = parseInt(memberNum / colNum) + 1;
+
+  document.write(rowNum + "줄 필요합니다.")
+
+  document.write("<table>");
+
+    for(i = 0; i<rowNum; i++){
+      document.write("<tr>")
+        for(j=1; j<=colNum; j++){
+        setNo = i * colNum +j;
+        if(setNo > memberNum) break;
+     document.write("<td> 좌석 " + setNo + "번</td>")
+  } 
+}
+document.write("</tr>");
+
+
+  document.write("</table>");
+
+
+
+</script>
+</body>
+</html>

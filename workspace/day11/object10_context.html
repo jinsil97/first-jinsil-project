@@ -1,0 +1,18 @@
+<script>
+
+var x = 'xxx';
+
+function foo(){        //GO global object 전역객체
+  var y = 'yyy';
+
+  function bar(){      //AO arguments object
+    var z = 'zzz';
+    alert(x+y+z);
+  };
+  bar();
+};
+foo();      //xxxyyyzzz
+
+
+
+</script>

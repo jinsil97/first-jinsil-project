@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      text-align: center;
+    }
+
+    .menu {
+      list-style: none;
+      width: 500px;
+      height: 700px;
+
+      margin: 10px auto;
+      padding: 10px;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      position: fixed;
+      left: 575px;
+      top: 100px;
+
+    }
+
+    .item {
+      padding: 0px;
+      border: 10px solid white;
+
+    }
+
+    a {
+      display: block;
+      padding: 94px 20px;
+      background-color: rgb(206, 206, 198);
+
+    }
+
+    a:link,
+    a:visited {
+      color: black;
+      font-weight: bold;
+      font-size: large;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    a:hover {
+      background-color: rgb(75, 75, 71);
+      color: white;
+    }
+
+    .ad {
+      width: 200px;
+      height: 330px;
+      position: fixed;
+      right: 620px;
+      top: 480px;
+      border: 1.5px solid black;
+    }
+
+    .sales {
+      border: 1.5px solid black;
+      width: 200px;
+      height: 310px;
+      position: fixed;
+      right: 620px;
+      top: 130px;
+
+    }
+
+    #array {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>관리자페이지</h1>
+  <div class="page">
+    <ul class=menu>
+      <li class="item" id="a1"><a href="a1_1.html">매출</a></li>
+      <li class="item" id="a2"><a href="a2_2.html">정산</a></li>
+      <li class="item" id="a3"><a href="a3_3.html">메뉴관리</a></li>
+      <li class="item" id="a4"><a href="a4_4.html">회원관리</a></li>
+      <li class="item" id="a5"><a href="a5_5.html">기기종료</a></li>
+      <li class="item" id="a6"><a href="a6_6.html">첫화면으로</a></li>
+    </ul>
+    <div class="ad"><br>광고 or 배너</div>
+    <div class="sales">
+      <h4>일일 매출요약</h4>
+      <p>일시 YYYY/MM/DD/HH:DD <br><br> </p>
+      <p id="array"> 총매출액: <br>부가세액: <br>현금매출액: <br>카드매출액: <br> 환불액:
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

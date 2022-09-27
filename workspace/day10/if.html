@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+   /* var userNumber = prompt("숫자 입력 : ");
+
+     if(userNumber !==null){
+     if(userNumber % 3 ===0) alert("3의 배수");
+         else alert ("3의 배수 X");
+     } else alert("입력 취소");
+
+    if (userNumber !== null)
+      (userNumber % 3 === 0) ? alert("3의 배수") : alert("3의 배수X");
+    else alert("입력 취소");*/
+
+    /*var numberOne = prompt("50미만 숫자 입력 : ");
+    var numberTwo = prompt("50미만 숫자 입력 : ");
+
+    if(numberOne < 50 || numberTwo < 50)
+    alert("숫자 2개 중 최소 하나는 50미만의 수");
+    else alert("숫자 2개 중 50미만인 수 X");*/
+
+    /*var num =2;
+    var kind;
+
+    //단순 if
+
+    if(num > 0) {kind = '양수';
+      alert(kind);}
+
+    // if-else
+
+    if(num>0) kind = '양수';
+     else if (num <0) kind = '음수';
+     else kind = '0';
+     alert (kind);
+
+    // 삼항연산자
+
+    kind = num ? (num >0? '양수' : '음수') : '0';
+    alert(kind);*/
+
+    /*var month = prompt("숫자로 해당월 입력 : ");
+    var monthName;
+
+    switch(month) {
+      case "1" :monthName = "January";
+           //  alert(monthName);
+             break;
+      case "2" :monthName = "February";
+           //  alert(monthName);
+             break;
+      case "12" :monthName = "December";
+           //  alert(monthName);
+             break;
+      default : alert ("유효하지 않은 값");
+    }
+      alert(monthName);*/
+
+      /*var days;
+      var year;
+      var month = prompt("숫자로 해당월 입력 : ");
+      switch(month){
+        case "1" : case "3" : case "5": case "7": case "8" :case "10" :case "12":
+          days = 31;
+          
+          break;
+
+          case "4": case "6": case "9" : case "11":
+            days = 30;
+            break;
+  days = ((year %4===0 && year%100 !==0) || (year%400 ===0))? 29 : 28
+  break;
+  default : alert ("invalid month");
+      }
+      alert(days); */
+
+      /*var year = 2000;   //2000년은 윤년으로 2월이 29일
+      var month = 2;
+      var days = 0; 
+
+      switch(month){
+        case "1" : case "3" : case "5": case "7": case "8" :case "10" :case "12":
+          days = 31;
+          break;
+
+        case "4": case "6": case"9" : case "11":
+          days = 30;
+          break;
+
+        case "2" :
+        days = ((year %4===0 && year%100 !==0) || (year%400 ===0))? 29 : 28;
+         
+         break;
+
+         default : alert("invalid month");
+      }
+        alert(days);
+
+        var year = 2000; // 2000년은 윤년으로 2월이 29일이다. */  // 이거 안됨
+                                                                // case에 " " 차이 
+
+/*var year = 2000;
+var month = 2;
+var days = 0;
+
+switch (month) {
+  case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+    days = 31;
+    break;
+  case 4: case 6: case 9: case 11:
+    days = 30;
+    break;
+  case 2:
+    // 윤년 계산 알고리즘
+    // 1. 년도가 4로 나누어 떨어지는 해는 윤년(2000, 2004, 2008, 2012, 2016, 2020…)
+    // 2. 그 중에서 년도가 100으로 나누어 떨어지는 해는 평년(2000, 2100, 2200...)
+    // 3. 그 중에서 년도가 400으로 나누어 떨어지는 해는 윤년(2000, 2400, 2800...)
+    days = ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) ? 29 : 28;
+    break;
+  default:
+    alert('Invalid month');
+}
+
+alert(days); // 29 */ // 선생님 코드
+
+
+/*var count = 0;
+
+do {                  //do 는 조건에 맞지 않더라도 무조건 한번은 실행
+  alert(count);
+  count++;
+} while (count<3); // 0 1 2 */
+
+
+/*foo : {
+
+  alert(1);
+   break foo;
+   alert(2);
+  } 
+  alert('Done!');
+
+
+ outer : for(var i = 0; i<3; i++){
+         for(var j =0; j<3; j++){
+           alert('i값= ' + i + ' j값= ' + j);
+           if(i+j ===3) break outer;
+            }
+          }  */
+
+  
+/*var string = 'hello world';
+var index;
+
+for(var i =0; i<string.length; i++){
+  if (string[i] === '1'){
+    index = i;
+    break;
+  }
+}
+alert(index);  //2
+alert(string.indexOf('1')); */ // 뭔가가 안됨 숫ㅈㅏ1이 아니고 문자 l
+
+
+/*var string = 'Hello World.';
+var index;
+
+// 문자열은 유사배열이므로 for 문으로 순회할 수 있다.
+for (var i = 0; i < string.length; i++) {
+  // 문자열의 개별 문자가 'l'이면
+  if (string[i] === 'l') {
+    index = i;
+    break; // 반복문을 탈출한다.
+  }
+}
+
+alert(index); // 2
+
+// 참고로 String.prototype.indexOf 메소드를 사용해도 같은 동작을 한다.
+alert(string.indexOf('l')); // 2  */
+
+  
+/*var string = 'Hello World.';
+var count = 0;
+
+// 문자열은 유사배열이므로 for 문으로 순회할 수 있다.
+for (var i = 0; i < string.length; i++) {
+  // 'l'이 아니면 현 지점에서 실행을 중단하고 반복문의 증감식으로 이동한다.
+  if (string[i] !== 'l') continue;
+  count++; // continue 문이 실행되면 이 문은 실행되지 않는다.
+
+}
+
+alert(count); // 3
+
+alert(string.match(/l/g).length); // 3  */
+
+/*   
+// continue 문을 사용하지 않으면 if 문 내에 코드를 작성해야 한다.
+for (var i = 0; i < string.length; i++) {
+  // 'l'이면 카운트를 증가시킨다.
+  if (string[i] === 'l') {
+    count++;
+    // code
+    // code
+    // code
+  }
+}
+
+// continue 문을 사용면 if 문 밖에 코드를 작성할 수 있다.
+for (var i = 0; i < string.length; i++) {
+  // 'l'이 아니면 카운트를 증가시키지 않는다.
+  if (string[i] !== 'l') continue;
+
+  count++;
+  // code
+  // code
+  // code
+} */
+
+/*var x =10;
+alert(typeof x);  //number
+
+var str = x.toString();
+alert(typeof str);  //string
+
+x = 20;
+str = x+'';
+
+alert(typeof str); //string    //type coercion 타입 강제 변환
+alert(typeof x);  //number
+
+alert('10' +2);  //102
+alert(!0);  //true  */
+
+/* // 숫자 타입
+0 + ''              // "0"
+-0 + ''             // "0"
+1 + ''              // "1"
+-1 + ''             // "-1"
+NaN + ''            // "NaN"
+Infinity + ''       // "Infinity"
+-Infinity + ''      // "-Infinity"
+// 불리언 타입
+true + ''           // "true"
+false + ''          // "false"
+// null 타입
+null + ''           // "null"
+// undefined 타입
+undefined + ''      // "undefined"
+// 심볼 타입
+(Symbol()) + ''     // TypeError: Cannot convert a Symbol value to a string
+// 객체 타입
+({}) + ''           // "[object Object]"
+Math + ''           // "[object Math]"
+[] + ''             // ""
+[10, 20] + ''       // "10,20"
+(function(){}) + '' // "function(){}"
+Array + ''          // "function Array() { [native code] }" 
+
+
+// 숫자타입으로 변환
+
+1 - '1'   //0
+1 * '10'  //10
+1 / 'one'  //NaN
+'1' > 0  //true
+
+// false로 처리하는 값
+false
+undefined
+null
+0 , -0
+NaN
+'' (빈문자열) */
+
+//문자열 타입 숫자로 변환
+
+/*alert(Number('0'));
+alert(Number('-1'));
+alert(Number('10.53'));
+
+//불리언 타입 => 숫자로 변환
+
+alert(Number(true));  //1
+alert(Number(false));  //0
+
+//문자열 타입 => 숫자로 변환/ parseFloat()-> 문자열만 가능 
+
+alert(parseInt('0'));  //0
+alert(parseInt('-10'));  //-10
+alert(parseInt('10.52'));  //10.52
+
+// +단항 연산자 연결연산자
+
+alert(+'0');  //0
+alert(+'-1');  //-1
+
+alert('0' * 1);  //0
+alert('-1' * 1);  // -1
+alert(true*1);  // 1
+alert(false*1);  //0  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

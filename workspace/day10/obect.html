@@ -1,0 +1,19 @@
+<script>
+
+var emptyObject = {};     //빈객체
+alert(typeof emptyObject)
+
+var person = {
+  name : 'true',
+  gender : 'female',
+  sayHello : function(){
+    alert('Hi~ My name is ' + this.name);
+  }
+};
+alert(typeof person);
+alert(person.name);
+alert(person.gender);
+person.sayHello();
+
+
+</script>

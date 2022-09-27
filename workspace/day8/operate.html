@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  /*var x ="my" + " sister";
+  
+  alert(x);*/
+
+ /* var x =1;
+  alert(+x);
+
+  var y = -2;
+  alert(+y);
+
+  alert(+true);
+  alert(+"");
+
+  /*덧셈연산자 + 와 숫자형으로의 변환
+  -이항연산자
+  -연결연산자
+  -단항연산자
+    숫자에 단항연산자 + 를 붙이면 동작X
+    숫자가 아닌 값에 붙이면 숫자로 변환됨
+  단항 >> 이항
+     */
+
+    /* var apples = "2";
+     var oranges = "3";
+     alert(apples + oranges);  //23
+     alert(+apples + +oranges);  //5
+     alert(Number(apples) + Number(oranges));  //5*/
+
+     /*var a =1, b=2;
+     var c = 3-(a=b+1);
+     alert(c);*/
+
+     var a,b,c;
+     a=b=c=2+2;   // 우측부터 값 할당  
+
+     c=2+2;
+     b=c;
+     a=b;
+
+     // 복합 할당 연산자 += , -= , *= , /= , %=
+
+     var n =2;
+     n*=5 +3;    // n = n*(5+3);  16
+     alert(n);
+     // 복합 할당 연산자의 우선순위는 할당연산자와 동일
+     // 대부분 다른 연산자 실행 후에 복합연산자가 적용
+
+     // 증가 감소 연산자(++ , --) : 숫자를 하나 늘리거나 줄일 때 
+     // ++ , -- 반드시 변수에만 적용 
+   
+     var counter = 2;
+     alert(2 * counter++);  //4
+     alert (counter);   //3
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<script>
+
+/*
+ function outerFunc(){
+  var x = 10;
+  var innerFunc = function(){alert(x);};
+  innerFunc();
+ }; 
+
+ // scope 은 함수를 호출할 때가 아니라 함수를 어디에 선언하였는지에 따라 결정
+ // 렉시컬스코핑(Lexical scoping)
+
+ outerFunc();
+
+
+ function outerFunc(){
+  var x = 10;
+  var innerFunc = function(){alert(x);};
+  return innerFunc;
+ };
+
+ var inner = outerFunc();
+ inner();
+
+// 자신을 포함하고 있는 외부함수보다 내부함수가 더 오래 유지되는 경우,
+// 외부함수 밖에서 내부함수가 호출되더라도
+// 외부함수의 지역변수에 접근하는 함수 ==> 클로저 */
+
+
+
+</script>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<botton class="toggle">toggle</botton>
+<div class="box" style="width : 300px; height:300px; background:rgb(211, 143, 143);"></div>
+  <script>
+  var box = document.querySelector('.box');
+var toggleBtn = document.querySelector('.toggle');
+
+var toggle = (function (){
+  var isShow = false;
+
+  return function(){
+    box.style.display = isShow?'block' : 'none';
+    isShow = !isShow;
+  };
+})();
+
+toggleBtn.onclick = toggle;
+
+
+</script>
+
+</body>
+</html>

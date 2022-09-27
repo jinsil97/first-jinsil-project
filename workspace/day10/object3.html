@@ -1,0 +1,25 @@
+<script>
+
+  function Person(name, gender){
+    var married = true;   //private - 외부에서 접근 X
+    this.name = name;
+    this.gender = gender;
+    this.sayhello = function(){
+      alert('hi~ my name is '+this.name +' and im ' +this.gender)
+    };
+
+  }
+
+  // 인스턴스 생성
+
+  var person1 = new Person('true', 'female');
+  var person2 = new Person('jinsil', 'female');
+
+  alert(person1.name);
+  alert(person2.name);
+  alert(person1.married);   //undefined
+  person1.sayhello();
+  person2.sayhello();
+
+
+</script>

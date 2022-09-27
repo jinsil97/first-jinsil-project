@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selecor</title>
+  <style>
+    /*input 태그 중 속성이 text인 태그의 바탕색을 red*/
+    /* input[type=text]{background: red;}
+    input[type=password] {background: green;}
+    img[src$=jpg]{border: 3px solid blueviolet;}*/
+
+    #header>h1 {
+      color: aqua;
+    }
+
+    #section>h1 {
+      color: violet;
+    }
+
+    .title {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <!--후손선택자 + 자손선택자-->
+  <div id="header">
+    <h1 class="title">추석맞이</h1>
+    <div id="nav">
+      <h1>navigator</h1>
+    </div>
+  </div>
+
+  <div id="section">
+    <h1 class="title">즐겁고 행복한 명절</h1>
+    <p>코로나 조심하세용</p>
+  </div>
+
+  <!--속성 선택자 선택자[type=속성값]-->
+  <form>
+    <input type="text">
+    <input type="password">
+    <img src="images/salad.jpg" width="300" height="300">
+    <img src="images/notice.jpg" width="300" height="300">
+
+  </form>
+
+</body>
+
+</html>

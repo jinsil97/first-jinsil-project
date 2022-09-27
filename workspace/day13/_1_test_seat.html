@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+  <style>
+    table, td {
+      border:1px solid #ccc;
+      border-collapse: collapse;
+    }
+    td {
+      padding:5px;
+      font-size:0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>자리 배치도</h1>
+
+  <script>
+  var people = prompt("총 관객수는 몇명인가요?");
+  var onerow = prompt("한 줄에 몇명씩 앉나요?");
+  var rownum = 
+    if(people%onerow==0) alert(people / onerow);
+    else alert(people/onerow +1);
+  
+    alert("<table border=''>");
+    for(i=0; i<rownum;i++){
+      alert("<td>")
+      for(j=0;j<onerow;j++){
+        alert("좌석" + j + "번");
+      }
+      alert("</td>");
+
+    }
+    alert("</table>");
+  </script>
+</body>
+</html>
+
+

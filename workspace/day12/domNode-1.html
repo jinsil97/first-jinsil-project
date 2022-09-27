@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+  <style>
+    #container{
+      width:500px;
+      margin:10px auto;
+      padding:20px;
+    }
+    #info {
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">    
+    <h1></h1>
+    <a href="#" onclick="addP()" >내 마음</a>    
+    <div id="info"></div>
+  </div>
+
+  <script>
+
+    function addP(){
+      let newP = document.createElement("p");
+      let txtNode = document.createTextNode("🧡💛💚💙💜🤎🖤");
+      newP.appendChild(txtNode);
+      document.getElementById('info').appendChild(newP);
+    };
+  </script>
+</body>
+</html>
+

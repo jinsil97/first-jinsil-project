@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChoiJinSil</title>
+ <link rel="stylesheet" href="css/introduce.css">
+ <style>
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2');
+</style>
+</head>
+
+<body>
+  <div id="container">
+    <header class="header">
+      
+      <div id="logo">
+       <a href="introduce.html"> <img src="images/logo.png" alt="logo" id="logo" width="100px"></a>
+      </div>
+      <div id="title" >
+      <h1> <b>ABOUT ME</b></h1>
+    </div>
+      <div id="hyper">
+      <nav> <!--개인 블로그 or 노션 of 티스토리 이동-->
+        <ul>
+        <li ><a href="#" id="topmenu">ABCDE</a></li>
+        <li ><a href="https://www.notion.so/a036e3669dee4ff5b53e99616132e828" id="topmenu">NOTION</a></li>
+        <li ><a href="https://www.notion.so/Kiosk-PR-mini-65f9fc5a73c9478bb245668f610e1a2d" id="topmenu">PROJECT</a></li>
+      </ul>
+      </nav>
+    </div>
+    
+    </header>
+
+    <!--본인 사진과 자신소개--> 
+
+     <aside id="mainpic">
+      <br><br><br><br><br>
+        <img src="images/main.jpg" id="v" >
+     </aside>
+      <section class="contents">
+        <br><br><br><br><br><br><br>
+        <h3>"다재다능 풀 스택 개발자가 되는 그날까지 -"</h3>
+        <br>
+        <p>안녕하세요! 저는 최진실이에요!</p>
+        <p>식품영양학과를 졸업하고 지금은 개발자가 되기 위해</p>
+        <p> 새로운 세계로 걸어가는 중이에요</p>
+        <p>여행가서 탁 트인 바다를 보는 것을 좋아해요</p>
+        <p>현재에 안주하지 않고 바다처럼 드넓은 정보와 지식을 늘 갈구하는 자세로! </p>
+        <p>모든 것을 아우르는 개발자가 될 거예요 :)</p>
+       
+      </section>
+
+    <aside class="aside"> <!--본인사진이나 좋아하는 사진 6개 등록 썸네일형태로 등록후
+                 클릭하면 사이즈 업하여 보여주기
+                빅사이즈 그림 본후 클릭하여 사진 종료-->
+                <br><br><br><br><br><br><br>
+                <div class="row">
+                  <ul>
+                    <li><img src="images/profile_small.jpg" data-src="images/profile_big.jpg" class="pic"></li>
+                    <li><img src="images/nutri_small.png" data-src="images/nutri_big.png" class="pic"></li>
+                    <li><img src="images/sky_small.jpg" data-src="images/sky_big.jpg" class="pic"></li> 
+                    <li><img src="images/horse_small.jpg" data-src="images/horse_big.jpg" class="pic"></li>
+                    <li><img src="images/daisy_small.jpg" data-src="images/daisy_big.jpg" class="pic"></li>
+                    <li><img src="images/program_small.png" data-src="images/program_big.png" class="pic"></li>          
+                  </ul>    
+                </div>
+            
+                <div id="lightbox">
+                  <img src="images/profile_big.jp" alt="" id="lightboxImage">			
+                </div>
+
+              </aside>
+
+    <footer class="footer">  <!--본인 이메일 링크 걸기 -->
+
+      <a href="mailto:cjs4417@naver.com" id="foot"><img src="images/mail.png" alt="mail" width="40px"></a>
+      <a href="tel:010-1234-5678" id="foot"><img src="images/tel.png" alt="tel" width="35px"></a>
+      <a href="#" id="foot"><img src="images/insta.png" alt="insta" width="35px"></a>
+      <p id="ttspa">This Too Shall Pass Away</p>
+
+
+    </footer>
+
+
+
+  </div>
+  </body>
+  <script>
+ var pics = document.getElementsByClassName("pic"); 
+      var lightbox = document.getElementById("lightbox");  
+      var lightboxImage = document.getElementById("lightboxImage"); 
+
+      for (i=0; i<pics.length; i++) {
+        pics[i].addEventListener("click", showLightbox);
+      }
+
+      function showLightbox() {
+				var bigLocation = this.getAttribute("data-src"); 
+				lightboxImage.setAttribute("src", bigLocation);  
+				lightbox.style.display = "block"; 
+      }
+      
+      lightbox.onclick = function() { 
+				lightbox.style.display = "none"; 
+      }
+
+  </script>
+
+</html>

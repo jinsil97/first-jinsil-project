@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Programming</title>
+	<style>
+    *{
+  box-sizing:border-box;
+}
+#container {  
+  width:500px;
+  margin:20px auto;
+  padding:20px;
+}
+input[type="text"] {
+  width:370px;
+  float:left;
+  height:30px;
+  padding-left:30px;
+}
+button {
+  width:90px;
+  height:30px;
+  float:right;
+  background:#222;
+  color:#fff;
+  border:none;
+}
+hr { clear:both; display:none; }
+ul { list-style:none; padding-top:50px;}
+li { line-height: 2.5; }
+li:hover { cursor:pointer;}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해 보세요</p>
+    <p>공부가 끝난 것은 클릭해서 삭제할 수 있습니다.</p>
+    <form action="">
+      <input type="text" id="subject" autofocus>
+      <button onclick="newRegister(); return false;">추가</button>
+    </form>
+    <hr>  
+    <ul id="itemList"> </ul>  
+  </div>
+
+	<script>
+    function newRegister() {
+      // 요소 노드 추가 
+      var add = document.createElement("li");
+      // 폼의 텍스트 필드
+      var txt = document.querySelector("#subject");
+       // 텍스트 필드의 값을 텍스트 노드로 만들기
+       var newtxt = createTextNode(txt.value);
+        // 텍스트 노드를 요소 노드의 자식 노드로 추가
+        add = appendchild(newtxt);
+
+       // 웹 문서에서 부모 노드 가져오기 
+       var itemlist = document.querySelector("#itemList");
+       // 자식 노드중 첫번째 노드 앞에 추가
+
+      subject.value="";
+
+        // 모든 항목 가져오기
+      for(i=0; i<items.length; i++) {
+          // 항목 클릭했을 때 실행할 함수
+           // 부모 노드가 있다면 
+            // 부모 노드에서 삭제
+        };
+      }
+    
+  
+	</script>
+</body>
+</html>

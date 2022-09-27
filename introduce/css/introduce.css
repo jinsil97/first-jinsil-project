@@ -1,0 +1,133 @@
+.header {
+    display: block;
+    background: white;
+    padding: 50px;
+    
+    color: orange;
+    height : 50px;
+    /* border: 1px solid black; */
+  }
+  #logo{
+    float: left;
+    
+    /* border: 1px solid black; */
+    
+  }
+  li{float: right;
+  padding: 30px;
+  list-style: none;
+  
+  }
+  #topmenu{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: orange;
+    
+    
+  }
+  #container{
+    width: 1200px;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+  }
+  
+  #mainpic{
+    width: 298px;
+    height: 600px;
+    /* border: 1px solid black; */
+    float: left;
+    
+  }
+  .contents{
+    width: 598px;
+    height: 600px;
+    float: left;
+    /* border: 1px solid black; */
+    font-family: 'KOTRAHOPE';
+    font-weight: normal;
+    font-style: normal;
+    
+    
+  }
+  .aside{
+    width: 298px;
+    height: 600px;
+    float: left;
+    /* border: 1px solid black; */
+  }
+  .footer{
+    width: 1200px;
+    height : 30px;
+    clear: both;
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+  .row {  
+            width:300px;
+            margin:0 auto;
+          }      
+          .row ul {
+            list-style:none;
+            margin:0;
+            padding:0;
+          }
+          .row ul li {
+            display:inline-table;  
+            padding: 10px;      
+                  }
+  .pic{
+    border-radius: 5px;
+  }
+  #title{
+    display: inline-block;
+    
+    width: 530px;
+    text-align: right;
+    /* border: 1px solid black; */
+  }
+  #ttspa{
+    font-style: italic;
+  }
+  h3{font-style: italic;
+     text-align: center;}
+  
+     p{ text-align:center;}
+  
+  #lightbox {
+            position: fixed;  
+            width:100%;  
+            height:100%; 
+            background-color:rgba(0,0,0,0.7); 
+            top:0;  
+            left:0; 
+            display:none; 
+          }
+       
+  #lightbox img {
+            position:absolute; 
+            top:50%;  
+            left:50%;  
+            transform:translate(-50%, -50%); 
+            border:5px solid #eee;     
+          }
+    #foot{
+      padding: 10px;
+    }
+    #v {
+      width : 298px ;
+      height:400px;
+       border-radius: 20px;
+       vertical-align: middle;
+    }
+    #hyper{
+      /* border: 1px solid rgb(164, 34, 34); */
+      float: right;
+    }
+    /* @font-face {
+      font-family: 'KOTRAHOPE';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  } */
+
+  
